@@ -1,63 +1,33 @@
 {
   "recepies": [
     {
-      "name": "werdfghn",
-      "ingredient": "2qa3wesrdtfgvb",
-      "amount": "6",
-      "comment": "qawesrdvbn",
-      "id": 26
-    },
-    {
-      "name": "ConnyB",
-      "ingredient": "bob",
-      "amount": "4",
-      "comment": "w3ertyhj",
-      "id": 27
-    },
-    {
-      "name": "ConnyB",
-      "ingredient": "bob",
-      "amount": "1",
-      "amount-1": "sallaD",
-      "amount-2": "HUS",
-      "comment": "q3wetrhf4rtf",
-      "id": 28
-    },
-    {
-      "name": "hej",
-      "ingredient": "in1",
-      "amount": "3",
-      "amount-1": "in2",
-      "amount-2": "in3",
-      "comment": "okikujyhtgrf",
-      "id": 29
-    },
-    {
-      "name": "ConnyB",
-      "ingredient": "in1",
-      "amount": "3",
-      "amount-1": "in2",
-      "amount-2": "in3",
-      "comment": "QAWSXDFCG",
-      "id": 30
-    },
-    {
-      "name": "REST",
-      "ingredient": "IN1",
-      "amount": "3",
-      "amount-1": "IN2",
-      "amount-2": "IN3",
-      "comment": "2QW3ERFTGHN",
-      "id": 31
-    },
-    {
-      "name": "sdffgh",
-      "ingredient": "1",
-      "amount": "3",
-      "amount-1": "2",
-      "amount-2": "3",
-      "comment": "sedrftgh",
-      "id": 32
+      "ingredients": [
+        "Mjöl",
+        "Torrjäst",
+        "Salt",
+        "Vatten"
+      ],
+      "amounts": [
+        "600",
+        "3",
+        "5",
+        "5"
+      ],
+      "units": [
+        "g",
+        "ml",
+        "ml",
+        "dl"
+      ],
+      "category": [
+        "drygoods",
+        "chese",
+        "drygoods",
+        "other"
+      ],
+      "name": "Bröd",
+      "comment": "Kanske med oliver?",
+      "id": 1
     }
   ]
 }
