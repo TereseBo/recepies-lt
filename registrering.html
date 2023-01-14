@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="module" src="./scripts/reg.js"></script>
+    <title>Receptregistrering</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Receptnamn</label>
+        <input type="text" name="name" id="name">
+        <h3>Ingredienser</h3>
+        <div id="ingredients-container">
+            <div id="ingredient-field">
+                <label for="ingredient">Ingrediens:</label>
+                <input type="text" name="ingredient" id="ingredient">
+                <label for="amount">Mängd:</label>
+                <input type="number" name="amount" id="amount">
+            </div>
+            <button id="add-ingredient">Lägg till ingrediens</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
