@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.06rem;
+  padding: 10px;
+  background-color: black;
+  color: #f5e5d4;
+}
+
+h1 {
+  color: #a009c5;
+  font-size: 300%;
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  line-height: 2.5rem;
+}
+
+h3 {
+  line-height: 2rem;
+}
+
+h4 {
+  line-height: 1.5rem;
+}
+
+  /* Top navigation */
+nav {
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .active_page {
+    color: rgb(252, 6, 6);
+  }
+  
+  /* Navigation */
+  a {
+    color: #a009c5;
+    font-size: 90%;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  nav>a:hover {
+    color: rgb(252, 6, 6);
+  }
+
+  /* Media queries */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    section {
+      font-size: 1rem;
+      letter-spacing: 0.063rem;
+    }
+  
+    .picture {
+      display: block;
+    }
+  
+    div {
+      margin-right: 15%;
+      margin-left: 15%;
+    }
+  
+  }
+  
+  /* Large devices */
+  @media only screen and (min-width: 1200px) {
+    section {
+      font-size: 110%;
+      letter-spacing: 0.125rem;
+    }
+  
+    /* Navigation */
+    a {
+      font-size: 110%;
+    }
+  
+    .picture {
+      display: block;
+    }
+  
+    div {
+      margin-right: 25%;
+      margin-left: 25%;
+    }
+}
+   
+  /* Extra large devices */
+  @media only screen and (min-width: 1920px) {
+    section {
+      font-size: 125%;
+      letter-spacing: 0.125rem;
+    }
+  
+    /* Navigation */
+    a {
+      font-size: 120%;
+    }
+  
+    .picture {
+      display: block;
+    }
+  
+    div {
+      margin-right: 30%;
+      margin-left: 30%;
+    }
+}
+   
