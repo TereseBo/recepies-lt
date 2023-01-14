@@ -8,6 +8,14 @@ body {
   padding: 10px;
   background-color: black;
   color: #f5e5d4;
+  display: block;
+  align-items: center;
+}
+
+form {
+  position: absolute;
+  left: 10px;
+  color: aqua;
 }
 
 h1 {
@@ -32,7 +40,7 @@ h4 {
 
   /* Top navigation */
 nav {
-    text-align: center;
+    text-align: left;
     padding: 12px;
   }
   
@@ -69,6 +77,11 @@ nav {
       margin-right: 15%;
       margin-left: 15%;
     }
+    form {
+      position: absolute;
+      left: 10px;
+      color: aqua;
+    }
   
   }
   
@@ -92,6 +105,11 @@ nav {
       margin-right: 25%;
       margin-left: 25%;
     }
+    form {
+      position: absolute;
+      left: 10px;
+      color: rgb(17, 0, 255);
+    }
 }
    
   /* Extra large devices */
@@ -113,6 +131,11 @@ nav {
     div {
       margin-right: 30%;
       margin-left: 30%;
+    }
+    form {
+      position: absolute;
+      left: 10px;
+      color: rgb(0, 255, 55);
     }
 }
    
