@@ -2,7 +2,6 @@
 
 function addIngredient(e) {
     console.log("add ingredient");
-    e.PreventDefault();
     console.log("add ingredient");
     const ingredient = document.getElementById("ingredient-field").cloneNode(true);
     let ingredientContainer = document.getElementById("ingredients-container");
@@ -17,6 +16,6 @@ function addIngredient(e) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("add-ingredient").addEventListener("click", addIngredient);
-    //addIngredient();
+    document.getElementById("add-ingredient").addEventListener("click", e =>{addIngredient(e);});
+
 })
