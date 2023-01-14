@@ -1,26 +1,40 @@
 
 
 function addIngredient(e) {
-    console.log("add ingredient");
-    console.log("add ingredient");
     const ingredient = document.getElementById("ingredient-field").cloneNode(true);
     let ingredientContainer = document.getElementById("ingredients-container");
-    console.log(ingredientContainer.children.length);
-    let nr = ingredientContainer.children.length
-    ingredient.setAttribute("id", `ingredient-field-${nr}`);
-    ingredient.children[0].setAttribute("id", `ingredient-${nr}`);
-    ingredient.children[0].setAttribute("for", `ingredient-${nr}`);
-    ingredient.children[0].setAttribute("name", `ingredient-${nr}`);
-    ingredient.children[1].setAttribute("id", `amount-${nr}`);
-    ingredient.children[1].setAttribute("name", `amount-${nr}`);
+    Array.from(ingredient.children).forEach(child => {child.value = ""});
+
     ingredientContainer.appendChild(ingredient);
 }
 async function registerRecipe(e) {
     e.preventDefault();
     const myFormData = new FormData(e.currentTarget);
     const formDataObj = {};
-console.log(myFormData);
-    myFormData.forEach((value, key) => (formDataObj[key] = value));
+    formDataObj["ingredients"] = [];
+    formDataObj["amounts"] = [];
+    formDataObj["units"] = [];
+    formDataObj["category"] = [];
+    console.log(myFormData);
+    myFormData.forEach((value, key) => {
+        if(key === "ingredient"|| key === "unit" || key === "category"|| key === "amount"){
+            switch(key){
+                case "ingredient":
+            formDataObj["ingredients"].push(value);
+            break;
+            case "unit":
+            formDataObj["units"].push(value);
+            break;
+            case "category":
+            formDataObj["category"].push(value);
+            break;
+            case "amount":
+            formDataObj["amounts"].push(value);
+            break;
+            }}
+        else{        
+        formDataObj[key] = value
+        }});
     let recipe = formDataObj;
     console.log(formDataObj);
 
@@ -37,8 +51,7 @@ console.log(myFormData);
 
 
         e.target.reset();
-       // alert("Ditt recept har registrerats!");
-       debugger;
+        // alert("Ditt recept har registrerats!");
     }
 }
 

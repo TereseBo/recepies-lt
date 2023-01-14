@@ -22,9 +22,28 @@
         <div id="ingredients-container">
             <div id="ingredient-field">
                 <label for="ingredient">Ingrediens:</label>
-                <input type="text" name="ingredient" id="ingredient">
+                <input type="text" name="ingredient" id="ingredient"/>
                 <label for="amount">Mängd:</label>
-                <input type="number" name="amount" id="amount">
+                <input type="number" name="amount" id="amount"/>
+                <select type="select" name="unit" id="unit">
+                <option value="g">g</option>
+                <option value="kg">kg</option>
+                <option value="l">l</option>
+                <option value="dl">dl</option>
+                <option value="ml">ml</option>
+                <option value="st">st</option>
+                </select>
+                <select type="select" name="category" id="category" value="other">
+                    <option value="other">Övrigt</option>
+                    <option value="greens">Frukt och Grönt</option>
+                    <option value="dairy">Mejeri</option>
+                    <option value="chese">Chark och ost</option>
+                    <option value="drygoods">Torrvaror</option>
+                    <option value="frozen">Fryst</option>
+                    
+                    </select>
+
+                <!--TODO: Add enhet and category-->
             </div>
             
         </div>
