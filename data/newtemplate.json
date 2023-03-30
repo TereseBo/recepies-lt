@@ -1,0 +1,28 @@
+{
+    "recepie": 
+      {
+        "ingredients": [
+         {"name": "string", "amount": "int", "unit": "string", "category": "string"}
+
+        ],
+        "name": "string",
+        "comment": "string",
+        "id": "mongodb id",
+        "category": "string",
+        "author": "string"
+      },
+    "user": 
+      {
+        "name": "string",
+        "email": "string",
+        "password": "string",
+        "id": "mongodb id"
+      },
+      "ingredient": 
+      {
+        "name": "string",
+        "category": "string",
+        "id": "mongodb id"
+      }
+    
+  }
