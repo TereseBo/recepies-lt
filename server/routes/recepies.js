@@ -5,6 +5,7 @@ const recepieRouter = express.Router()
 //Middleware
 
 //Controllers
+const postrecipe = require('../controllers/postrecipe')
 
 //Route
 recepieRouter.get('/', (req, res) => {
@@ -13,9 +14,7 @@ recepieRouter.get('/', (req, res) => {
 recepieRouter.get('/:id', (req, res) => {
     res.send('Return one recepie with id')
 })
-recepieRouter.post('/', (req, res) => {
-    res.status(201).send('Create a new recepie')
-})
+recepieRouter.post('/', postrecipe)
 recepieRouter.put('/:id', async (req, res) => {
     res.send('Peplace a recepie with id')//create index
 })

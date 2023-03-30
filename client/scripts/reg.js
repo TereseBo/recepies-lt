@@ -19,8 +19,6 @@ async function registerRecipe(e) {//Sends the recipe to the server
     const ingredients = document.getElementById("ingredients-container").children;
    Array.from(ingredients).forEach(ingredient => {//Creates an ingredient object for each ingredient field
         const ingredientObj = {};
-        console.log(ingredient);
-       console.log(ingredient.querySelector("#ingredient").value);
         ingredientObj.name = ingredient.querySelector("#ingredient").value;
         ingredientObj.amount = ingredient.querySelector("#amount").value;
         ingredientObj.unit = ingredient.querySelector("#unit").value;
@@ -28,7 +26,6 @@ async function registerRecipe(e) {//Sends the recipe to the server
         formDataObj["ingredients"].push(ingredientObj);
     });
     const recipe = formDataObj;
-    console.log(formDataObj);
 
     let res = await fetch("http://localhost:3001/recepies", {
 
@@ -40,7 +37,7 @@ async function registerRecipe(e) {//Sends the recipe to the server
     });
     if (res.ok) {
         console.log(res.status);
-        e.target.reset();
+        //e.target.reset();
     }
 }
 
