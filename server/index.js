@@ -5,10 +5,10 @@ const dotenv=require('dotenv').config();
 const cors=require('cors');
 
 //Middleware
-server.use(cookieparser());
+//server.use(cookieparser());
 server.use(cors(
     {
-        origin: 'http://localhost:5500',
+        origin: 'http://127.0.0.1:5500',
         credentials: true
     }
 ))
