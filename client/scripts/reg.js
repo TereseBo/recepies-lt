@@ -1,13 +1,12 @@
 
 
-function addIngredient(e) {
+function addIngredient(e) {//Adds an ingrddient field to the recipe form
     const ingredient = document.getElementById("ingredient-field").cloneNode(true);
     let ingredientContainer = document.getElementById("ingredients-container");
     Array.from(ingredient.children).forEach(child => {child.value = ""});
-
     ingredientContainer.appendChild(ingredient);
 }
-async function registerRecipe(e) {
+async function registerRecipe(e) {//Sends the recipe to the server
     e.preventDefault();
     const myFormData = new FormData(e.currentTarget);
     const formDataObj = {};
@@ -47,7 +46,7 @@ async function registerRecipe(e) {
         body: JSON.stringify(recipe)
     });
     if (res.ok) {
-        console.log("Post successful");
+        console.log(res.status);
 
 
         e.target.reset();
