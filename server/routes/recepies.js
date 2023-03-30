@@ -6,11 +6,10 @@ const recepieRouter = express.Router()
 
 //Controllers
 const postrecipe = require('../controllers/recipes/postrecipe')
+const getrecipes = require('../controllers/recipes/getrecipes')
 
 //Route
-recepieRouter.get('/', (req, res) => {
-    res.send('Return all recepies')
-})
+recepieRouter.get('/', getrecipes)
 recepieRouter.get('/:id', (req, res) => {
     res.send('Return one recepie with id')
 })
