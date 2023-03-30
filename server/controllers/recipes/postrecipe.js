@@ -1,4 +1,4 @@
-const {db} = require('../database/database')
+const {db} = require('../../database/database')
 
 async function postrecipe(req, res) {
     console.log(req.body)
@@ -6,6 +6,7 @@ async function postrecipe(req, res) {
     const dbRes= await db.recipes.insertOne(req.body)
     console.log(dbRes)
     }catch(err){
+        res.status(500).send('Error')
         console.log(err)
     }
     

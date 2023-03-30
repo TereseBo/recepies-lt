@@ -5,7 +5,7 @@ const recepieRouter = express.Router()
 //Middleware
 
 //Controllers
-const postrecipe = require('../controllers/postrecipe')
+const postrecipe = require('../controllers/recipes/postrecipe')
 
 //Route
 recepieRouter.get('/', (req, res) => {
